@@ -12,6 +12,14 @@ public class HealthDisplay : NetworkBehaviour
     public override void OnNetworkSpawn()
     {
         if (!IsClient) return;
+        if (!IsOwner)
+        {
+            healhBarImage.color = Color.red;
+        }
+        else
+        {
+            healhBarImage.color = Color.green;
+        }
         health.CurrenHealth.OnValueChanged += HandleHealthChanged;
         HandleHealthChanged(0, health.CurrenHealth.Value);
     }

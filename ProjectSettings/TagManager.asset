@@ -14,8 +14,8 @@ TagManager:
   - Ground
   - Projectile
   - Player
-  - 
-  - 
+  - Pickup
+  - Terrain
   - 
   - 
   - 
@@ -43,6 +43,12 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 2624798841
+    locked: 0
+  - name: Coin
+    uniqueID: 1539072533
     locked: 0
   - name: Player
     uniqueID: 2085284459

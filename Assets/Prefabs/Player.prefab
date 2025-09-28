@@ -234,7 +234,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2085284459
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 481f3b9f20ce59844810c864f5ca62b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -320,7 +320,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2085284459
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: 605cbb064354f914189500378d7d27ef, type: 3}
   m_Color: {r: 0.23529412, g: 0.5647059, b: 0.91764706, a: 1}
@@ -570,7 +570,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2085284459
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 200
   m_Sprite: {fileID: 21300000, guid: 4f74143dcbc826c4fba8ce0c3860743f, type: 3}
   m_Color: {r: 0.23357056, g: 0.5641058, b: 0.9169811, a: 1}
@@ -600,6 +600,7 @@ GameObject:
   - component: {fileID: -5200160660860491611}
   - component: {fileID: -9131930825144178087}
   - component: {fileID: 8196248399386268142}
+  - component: {fileID: 8641563316845542046}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -637,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3505343854
+  GlobalObjectIdHash: 1489814210
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -753,9 +754,11 @@ MonoBehaviour:
   clientProjectilePrefab: {fileID: 3529943675865216279, guid: e098aa65870106a438f4072fc356ad08, type: 3}
   muzzleFlash: {fileID: 646315703796311252}
   playerCollider: {fileID: 8815413415336719124}
+  wallet: {fileID: 8641563316845542046}
   projectileSpeed: 30
-  fireRate: 0.75
+  fireRate: 0.9
   muzzleFlashDuration: 0.05
+  costToFire: 10
 --- !u!114 &-9131930825144178087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,6 +788,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: -9131930825144178087}
   healhBarImage: {fileID: 7332999502950102431}
+--- !u!114 &8641563316845542046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7810412979991354720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68220d93bcfee5140a36bf804a29dcb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalCoins:
+    m_InternalValue: 0
 --- !u!1 &9192352244216978842
 GameObject:
   m_ObjectHideFlags: 0
