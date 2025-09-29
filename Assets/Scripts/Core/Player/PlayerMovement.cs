@@ -43,5 +43,6 @@ public class PlayerMovement : NetworkBehaviour
     private void HandleMove(Vector2 input)
     {
         previousMoveInput = input;
+        
     }
 }
