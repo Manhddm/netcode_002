@@ -624,7 +624,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 551e2f114c0ed0d40a785b70e8dfdf39, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
+    ConnectionApproval: 1
     ConnectionData: 
     EnableTimeResync: 0
     TimeResyncInterval: 30
