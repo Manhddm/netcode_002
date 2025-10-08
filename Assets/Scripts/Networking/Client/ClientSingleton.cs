@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -40,5 +41,8 @@ public class ClientSingleton : MonoBehaviour
         return await GameManager.InitAsync();
     }
 
-
+    private void OnDestroy()
+    {
+        GameManager?.Dispose();
+    }
 }

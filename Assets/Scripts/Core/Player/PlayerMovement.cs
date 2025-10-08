@@ -13,6 +13,7 @@ public class PlayerMovement : NetworkBehaviour
     [Header("Settings")]
     [SerializeField] private float moveSpeed= 4f;
     [SerializeField] private float turningRate= 30f;
+
     private Vector2 previousMoveInput;
     public override void OnNetworkSpawn()
     {
@@ -22,7 +23,7 @@ public class PlayerMovement : NetworkBehaviour
     }
 
     public override void OnNetworkDespawn()
-    {
+    {   
         if(!IsOwner) return;
         inputReader.MovementEvent -= HandleMove;
     }

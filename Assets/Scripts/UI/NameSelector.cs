@@ -20,15 +20,12 @@ public class NameSelector : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             return;
         }
-        
-        
         nameField.text = PlayerPrefs.GetString(PLayerNameKey, string.Empty);
         HandleChangeName();
     }
     public void HandleChangeName()
     {
         connectButton.interactable = nameField.text.Length >= minNameLength && nameField.text.Length <= maxNameLength;
-        
     }
 
     public void Connect()
